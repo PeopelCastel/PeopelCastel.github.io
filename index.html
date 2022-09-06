@@ -1,1 +1,158 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="no" class="has-navbar-fixed-top">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Terraria</title>
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <script src="https://kit.fontawesome.com/172d7e70e8.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="container">
+                        
+            <!-- Navbar -->
+
+            <div class="block">
+                <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <a href="" class="navbar-item">
+                            <img src="#" alt="">
+                            <h1 class="title is-4">Title</h1>
+                        </a>
+                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="main-navbarDiv">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+
+                    <div id="main-navbarDiv" class="navbar-menu">
+                        <div class="navbar-start">
+                            <a href="" class="navbar-item">Hjem</a>
+                            <a href="https://www.overleaf.com/project/" class="navbar-item" target="_blank">Test</a>
+
+                            <div class="navbar-item has-dropdown is-hoverable">
+                                <a href="" class="navbar-link">helo</a>
+
+                                <div class="navbar-dropdown">
+                                    <a href="" class="navbar-item">Test</a>
+                                    <a href="" class="navbar-item">Test</a>
+                                    <a href="media/Data__og_Informasjonsteknologi.pdf" class="navbar-item">#</a>
+                                </div>
+                            </div>
+
+                            <div class="navbar-item has-dropdown is-hoverable">
+                                <a href="" class="navbar-link"><Title></Title></a>
+
+                                <div class="navbar-dropdown">
+                                    <a href="" class="navbar-item">#</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="navbar-end">
+                            <a href="" class="navbar-item" target="_blank">
+                                <span class="icon">
+                                    <i class="fa-brands fa-github"></i>
+                                </span>
+                            </a>
+    
+                            <a href="https://store.steampowered.com/" class="navbar-item" target="_blank">
+                                <span class="icon">
+                                    <i class="fa-brands fa-steam"></i>
+                                    <a href="">
+
+                                </span>
+                            </a>
+    
+                            <a href="" class="navbar-item" target="_blank">
+                                <span class="icon">
+                                    <i class="fa-brands fa-reddit"></i>
+                                </span>
+                            </a>
+                        </div>
+                        
+                        <!-- BORGAR functionality -->
+
+                        <script>
+                            document.addEventListener('DOMContentLoaded', () => {
+
+                            // Get all "navbar-burger" elements
+                            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+                            // Add a click event on each of them
+                            $navbarBurgers.forEach( el => {
+                                el.addEventListener('click', () => {
+
+                                // Get the target from the "data-target" attribute
+                                const target = el.dataset.target;
+                                const $target = document.getElementById(target);
+
+                                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                                el.classList.toggle('is-active');
+                                $target.classList.toggle('is-active');
+
+                                });
+                            });
+
+                            });
+                        </script>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <div class="tile is-child is-6 box">
+                        <h1 class="title is-5">Hello World!</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, quaerat?</p>
+                    </div>
+                    <div class="tile is-2"></div>
+
+                    <!-- Submission Form -->
+
+                    <div class="tile is-child is-4 box">
+                        <h1 class="title is-3">New Post</h1>
+
+                        <div class="field">
+                            <div class="label">Post Title</div>
+                            <div class="control">
+                                <input type="text" class="input" placeholder="Title" id="titleInp">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="label">Post content</div>
+                            <div class="control">
+                                <textarea placeholder="Body" class="textarea" id="bodyInp"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <button class="button is-link is-primary">Submit</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link is-light">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+            </div>
+
+            <div class="block">
+                <button class="button is-link is-primary">Boop</button>
+                <button class="button is-link is-info">Boop</button>
+                <button class="button is-link is-success">Boop</button>
+                <button class="button is-link is-warning">Boop</button>
+                <button class="button is-link is-danger">Boop</button>
+            </div>
+                
+        </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html></html>
