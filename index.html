@@ -30,21 +30,21 @@
 
                     <div id="main-navbarDiv" class="navbar-menu">
                         <div class="navbar-start">
-                            <a href="" class="navbar-item">Hjem</a>
-                            <a href="https://www.overleaf.com/project/" class="navbar-item" target="_blank">Test</a>
+                            <a href="#" class="navbar-item">Hjem</a>
+                            <a href="#" class="navbar-item">Test</a>
 
                             <div class="navbar-item has-dropdown is-hoverable">
-                                <a href="" class="navbar-link">helo</a>
+                                <a href="" class="navbar-link">#</a>
 
                                 <div class="navbar-dropdown">
                                     <a href="" class="navbar-item">Test</a>
                                     <a href="" class="navbar-item">Test</a>
-                                    <a href="media/Data__og_Informasjonsteknologi.pdf" class="navbar-item">#</a>
+                                    <a href="#" class="navbar-item">#</a>
                                 </div>
                             </div>
 
                             <div class="navbar-item has-dropdown is-hoverable">
-                                <a href="" class="navbar-link"><Title></Title></a>
+                                <a href="" class="navbar-link">#</a>
 
                                 <div class="navbar-dropdown">
                                     <a href="" class="navbar-item">#</a>
@@ -111,47 +111,47 @@
                     </div>
                     <div class="tile is-2"></div>
 
-                    <!-- Submission Form -->
+                    <div class="tile is-child is-parent is-4">
 
-                    <div class="tile is-child is-4 box">
-                        <h1 class="title is-3">New Post</h1>
+                        <div class="tile is-parent">
+                            <div class="tile is-child box">
+                        
+                                <!-- Submission Form -->
 
-                        <div class="field">
-                            <div class="label">Post Title</div>
-                            <div class="control">
-                                <input type="text" class="input" placeholder="Title" id="titleInp">
+                                <h1 class="title is-3">New Post</h1>
+
+                                <div class="field">
+                                    <div class="label">Post Title</div>
+                                    <div class="control">
+                                        <input type="text" class="input" placeholder="Title" id="titleInp">
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <div class="label">Post content</div>
+                                    <div class="control">
+                                        <textarea placeholder="Body" class="textarea" id="bodyInp"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="field is-grouped">
+                                    <div class="control">
+                                        <button class="button is-link is-primary" onclick="submit()">Submit</button>
+                                    </div>
+                                    <div class="control">
+                                        <button class="button is-link is-light" onclick="fieldClear()">Clear</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="field">
-                            <div class="label">Post content</div>
-                            <div class="control">
-                                <textarea placeholder="Body" class="textarea" id="bodyInp"></textarea>
-                            </div>
-                        </div>
+                        <!-- Post area -->
 
-                        <div class="field is-grouped">
-                            <div class="control">
-                                <button class="button is-link is-primary">Submit</button>
-                            </div>
-                            <div class="control">
-                                <button class="button is-link is-light">Clear</button>
-                            </div>
+                        <div class="tile is-parent is-vertical" id="commentField">
                         </div>
                     </div>
             </div>
             </div>
-        </div>
-            </div>
-
-            <div class="block">
-                <button class="button is-link is-primary">Boop</button>
-                <button class="button is-link is-info">Boop</button>
-                <button class="button is-link is-success">Boop</button>
-                <button class="button is-link is-warning">Boop</button>
-                <button class="button is-link is-danger">Boop</button>
-            </div>
-                
         </div>
     <script src="scripts/main.js"></script>
 </body>
