@@ -1,8 +1,5 @@
 html{
-  background-image: url(media/terraria_background.jpg), url(media/stone.png);
-  background-position: top, bottom;
-  background-repeat: no-repeat, repeat;
-  position:absolute,absolute;
-  max-width: cover, 20px;
-  z-index: 2,1;
- }
+  background: url(media/terraria_background.jpg) center top no-repeat,url(media/stone.png) right bottom repeat;
+  background-size: 100%, 40px;
+
+}
