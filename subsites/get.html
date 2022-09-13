@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="no" class="has-navbar-fixed-top">
+<head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Terraria</title>
+        <link rel="stylesheet" type="text/css" href="../Style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <script src="https://kit.fontawesome.com/172d7e70e8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <div class="block">
+            <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="#">
+                        <img src="../media/TGGLogo.png" width="35" height="35">
+                    </a>
+                    <a href="" class="navbar-item">
+                        <img src="#" alt="">
+                        <h1 class="title is-4">Terraria Game Guides</h1>
+                    </a>
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="main-navbarDiv">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="main-navbarDiv" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a href="../index.html" class="navbar-item">Home</a>
+                        <a href="../subsites/Get_Terraria.html" class="navbar-item">Get Terraria!</a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a href="#" class="navbar-link">Guides</a>
+                            <div class="navbar-dropdown">
+                                <hr class="navbar-divider">
+                                <div class="navbar-item has-text-grey-light">Basics</div>
+                                <a href="" class="navbar-item">Getting started</a>
+                                <a href="" class="navbar-item">Game mechanics</a>
+                                <a href="" class="navbar-item">Progression</a>
+                                <hr class="navbar-divider">
+                                <div class="navbar-item has-text-grey-light">Combat</div>
+                                <a href="" class="navbar-item">Enemies</a>
+                                <a href="" class="navbar-item">Bosses</a>
+                            </div>
+                        </div>
+
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a href="#" class="navbar-link">Tips</a>
+
+                            <div class="navbar-dropdown">
+                                <a href="" class="navbar-item">Traversing the world</a>
+                            </div>
+                        </div>
+                        <a href="../subsites/about.html" class="navbar-item">About</a>
+                        <a href="../subsites/contact.html" class="navbar-item">Contact</a>
+
+                    </div>
+                    <div class="navbar-end">
+                        <a href="https://store.steampowered.com/app/105600/Terraria/" class="navbar-item" target="_blank">
+                            <span class="icon">
+                                <i class="fa-brands fa-steam"></i>
+                                <a href="">
+
+                            </span>
+                        </a>
+    
+                        <a href="https://old.reddit.com/r/Terraria/" class="navbar-item" target="_blank">
+                            <span class="icon">
+                                <i class="fa-brands fa-reddit"></i>
+                            </span>
+                        </a>
+                    </div>
+                        
+                    <!-- BORGAR functionality -->
+                    <script>
+                        document.addEventListener('DOMContentLoaded', () => {
+
+                        // Get all "navbar-borgar" elements
+                        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+                        // Add a click event on each of them
+                        $navbarBurgers.forEach( el => {
+                            el.addEventListener('click', () => {
+
+                            // Get the target from the "data-target" attribute
+                            const target = el.dataset.target;
+                            const $target = document.getElementById(target);
+
+                            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                            el.classList.toggle('is-active');
+                            $target.classList.toggle('is-active');
+
+                            });
+                        });
+
+                        });
+                    </script>
+                </div>
+            </nav>
+        </div>
+
+        <div class="box">
+            <h1 class="title is-4">PC</h1>
+
+            <iframe src="https://store.steampowered.com/widget/105600/8183/" frameborder="0" width="646" height="190"></iframe>
+        </div>
+        <div class="box">Konsole</div>
+        <div class="box">2</div>
+
+    </div>
+
+
+</body>
+
+</html>
